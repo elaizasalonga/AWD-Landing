@@ -1,0 +1,155 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: white;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  #header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #B80000;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  #header h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #header nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #header a.btn.btn-outline-primary {
+    background-color: #B80000;
+    color: black;
+    font-weight: 50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #963333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #header a.btn.btn-outline-primary:hover {
+    background-color: white;
+    color: black;
+    border-color: #B80000;
+  }
+
+  .container {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  
+  #text {
+    color: black;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+    text-align: center;
+    color: #820300;
+    height: 100%;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 179, 0);
+    text-align: left;
+  }
+  
+  .card-text {
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  #bp {
+    background-color: #820300;
+    color: white;
+    border-radius: 5px;
+    border-color: #820300;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #bp:hover {
+    background-color: white;
+    color: #820300;
+    border-color: #820300;
+  }
+  
+  #logo {
+    width: 150px;
+    height: auto;
+    align-content: left;
+  }
+
+  footer {
+    background-color: white;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 2rem;
+  }
+  
+  .help {
+    flex-basis: 30%;
+  }
+  
+  .newsletter-signup {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+
+  
