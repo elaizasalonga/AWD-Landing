@@ -1,7 +1,10 @@
-const letter = document.querySelectorAll('#_letters #_letter');
+const navbar = document.querySelector('header nav');
+const footer = document.querySelector('footer');
 
-letter.forEach((letter) => {
-    letter.addEventListener('click', () => {
-        letter.classList.toggle('active');
-    });
+
+navbar.addEventListener('click', () => {
+
+});
+
+footer.addEventListener('click', () => {
 });
