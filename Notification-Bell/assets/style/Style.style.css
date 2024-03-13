@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+
+.button {
+    border: none;
+    outline: none;
+    background: pink;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    box-shadow: 5px 5px 0px #cd5c5c ;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    &.active {
+        transform: translate(5%, 5%);
+        box-shadow: 0px 0px 0px pink;
+    }
+}
+.button.clicked {
+    color: #cd5c5c;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px; 
+    color: #333333;
+    background: pink;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    
+    &::after {
+        min-width: 15px;
+        min-height: 15px;
+        content: attr(data-count);
+        color: white;
+        display: flex;
+        font-weight: lighter;
+        justify-content: center;
+        align-self: center;
+        background-color: #f08080;
+        border-radius: 50%;
+        position: absolute;
+        top: -4px;
+        right: 7px;
+        transition: 0.3s;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    &::before {
+        content: '🎀';
+        font-family: 'Font Awesome 5 Free';
+        display: block;
+        color: #f08080;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &.count::after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &.notify::before {
+        animation: bell 0.5s ease-in-out;
+    }
+}
+
+@keyframes bell {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(25deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    30% {
+        transform: rotate(18deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    70% {
+        transform: rotate(8deg);
+    }
+    80% {
+        transform: rotate(-6deg);
+    }
+    90% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
